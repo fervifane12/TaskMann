@@ -1,7 +1,12 @@
 package com.TaskManager.TaskMann.Service;
 
+import com.TaskManager.TaskMann.DTO.ProjectDTO;
 import com.TaskManager.TaskMann.DTO.UserDTO;
+import com.TaskManager.TaskMann.Mapper.Mapper;
 import com.TaskManager.TaskMann.Model.User;
+import com.TaskManager.TaskMann.Repository.ProjectRepository;
+import com.TaskManager.TaskMann.Repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,9 +14,12 @@ import java.util.List;
 @Service
 public class UserService implements IUserService {
 
+    @Autowired
+    private UserRepository userRepository;
+
     @Override
     public List<UserDTO> GetAllUsers() {
-        return List.of();
+        return userRepository.findAll().stream().map(Mapper::toDTO).toList();
     }
 
     @Override

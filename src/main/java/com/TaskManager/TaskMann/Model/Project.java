@@ -21,6 +21,6 @@ public class Project {
     private String project_description;
 
     @ManyToOne
-    private User owner_id;
+    private User owner;
 
 }
