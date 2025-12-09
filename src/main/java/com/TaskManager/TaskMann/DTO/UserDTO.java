@@ -1,7 +1,5 @@
 package com.TaskManager.TaskMann.DTO;
 
-import com.TaskManager.TaskMann.Model.Project;
-import com.TaskManager.TaskMann.Model.Task;
 import lombok.*;
 
 import java.util.List;

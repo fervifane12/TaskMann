@@ -1,7 +1,5 @@
 package com.TaskManager.TaskMann.DTO;
 
-import com.TaskManager.TaskMann.Model.Project;
-import com.TaskManager.TaskMann.Model.User;
 import lombok.*;
 
 @Getter @Setter

@@ -1,7 +1,6 @@
 package com.TaskManager.TaskMann.Service;
 
 import com.TaskManager.TaskMann.DTO.TaskDTO;
-import com.TaskManager.TaskMann.Model.Task;
 
 import java.util.List;
 

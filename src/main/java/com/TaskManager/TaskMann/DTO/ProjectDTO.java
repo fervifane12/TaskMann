@@ -1,7 +1,5 @@
 package com.TaskManager.TaskMann.DTO;
 
-import com.TaskManager.TaskMann.Model.User;
-import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.*;
 
 @Getter @Setter
